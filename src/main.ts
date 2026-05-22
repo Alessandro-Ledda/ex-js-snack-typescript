@@ -45,3 +45,11 @@ type ProjctManager = Dipendente & {
   budgetGestito?: number,
   stakeholderPrincipali: string[]
 }
+
+// snack 3 bonus 
+type team = {
+  nome: string,
+  progettoAttuale: string | null,
+  budget: number,
+  membri: [ProjctManager, Developer, ...Developer[]]
+}
