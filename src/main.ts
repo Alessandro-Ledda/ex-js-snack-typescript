@@ -19,3 +19,13 @@ if (typeof response === 'string') {
 } else {
   console.log("Tipo nonn supportato")
 }
+
+// SNACK 2
+// creazione type Alias 'Dipendente'
+type Dipendente = {
+  nome: string,
+  cognome: string,
+  annoNascita: number,
+  sesso: 'm' | 'f',
+  anniServizio: number[]
+}
