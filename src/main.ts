@@ -31,3 +31,17 @@ type Dipendente = {
   readonly emailAziendale: string,
   contratto: 'indeterminato' | 'determinato' | 'freelance'
 }
+
+// SNACK 3
+// INTERSECTION
+type Developer = Dipendente & {
+  livelloEsperienza: 'junior' | 'mid' | 'senior',
+  linguaggi?: string[],
+  certificazioni: string[]
+}
+
+type ProjctManager = Dipendente & {
+  teamSize: number | null,
+  budgetGestito?: number,
+  stakeholderPrincipali: string[]
+}
